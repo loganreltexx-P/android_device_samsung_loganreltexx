@@ -28,9 +28,14 @@ COMMON_PATH := device/samsung/loganreltexx
 
 # Inherit from common msm8930
 -include device/samsung/msm8930-common/BoardConfigCommon.mk
-
 # Inherit from proprietary vendor
 -include vendor/samsung/loganreltexx/BoardConfigVendor.mk
+
+# Includes
+TARGET_SPECIFIC_HEADER_PATH += $(COMMON_PATH)/include
+
+# The first api level the device has commercially launched on
+PRODUCT_SHIPPING_API_LEVEL := 19
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
