@@ -87,10 +87,9 @@
          Note also: the order of this is important. The first upstream type
          for which a satisfying network exists is used. -->
     <integer-array translatable="false" name="config_tether_upstream_types">
-        <item>0</item>
         <item>1</item>
-        <item>5</item>
         <item>7</item>
+        <item>0</item>
     </integer-array>
 
     <!-- Boolean indicating whether the wifi chipset has dual frequency band support -->
