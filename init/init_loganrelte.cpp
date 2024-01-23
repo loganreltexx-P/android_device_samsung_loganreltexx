@@ -54,18 +54,8 @@ void vendor_load_properties()
     if (model == "S7275R") {
         property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/loganreltexx/loganrelte:4.4.2/KOT49H/S7275RXXUCNE6:user/release-keys");
         property_override("ro.build.description", "loganreltexx-user 4.4.2 KOT49H S7275RXXUCNE6 release-keys");
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "GT-S7275R");
-        property_override_dual("ro.product.device", "ro.vendor.product.device", "loganreltexx");
-    } else if (model == "S7275B") {
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/loganreltexx/loganrelte:4.4.2/KOT49H/S7275BXXUCNE6:user/release-keys");
-        property_override("ro.build.description", "loganreltexx-user 4.4.2 KOT49H S7275BXXUCNE6 release-keys");
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "GT-S7275B");
-        property_override_dual("ro.product.device", "ro.vendor.product.device", "loganreltexx");
-    } else if (model == "S7275T") {
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/loganreltexx/loganrelte:4.4.2/KOT49H/S7275TXXUCNE6:user/release-keys");
-        property_override("ro.build.description", "loganreltexx-user 4.4.2 KOT49H S7275TXXUCNE6 release-keys");
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "GT-S7275T");
-        property_override_dual("ro.product.device", "ro.vendor.product.device", "loganreltexx");
+        property_override_dual("ro.product.model", "ro.product.vendor.model", "GT-S7275R");
+        property_override_dual("ro.product.device", "ro.product.vendor.device", "loganreltexx");
     }
 
     const std::string device = android::base::GetProperty("ro.product.device", "");
