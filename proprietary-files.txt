@@ -5,7 +5,6 @@ vendor/firmware/libpn547_fw_pku.so
 vendor/firmware/libpn547_fw_platform.so
 
 # Bluetooth / FM
-bin/btnvtool
 bin/fm_qsoc_patches
 bin/hci_qcomm_init
 
@@ -14,13 +13,13 @@ bin/mpdecision
 bin/thermald
 
 # Audio
-lib/libacdbloader.so
+vendor/lib/libacdbloader.so
 lib/libaudcal.so
 
 # Adreno GPU
-etc/firmware/a300_pfp.fw
-etc/firmware/a300_pm4.fw
-etc/firmware/vidc_1080p.fw
+vendor/firmware/a300_pfp.fw
+vendor/firmware/a300_pm4.fw
+vendor/firmware/vidc_1080p.fw
 vendor/lib/egl/eglsubAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
