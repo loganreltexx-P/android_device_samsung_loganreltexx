@@ -149,10 +149,6 @@ PRODUCT_PACKAGES += \
 # Camera
 PRODUCT_PACKAGES += \
     Snap
-	
-# Telephony
-PRODUCT_PACKAGES += \
-    libsecnativefeature
 
 # call common loganre system props
 $(call inherit-product, device/samsung/loganreltexx/system_prop.mk)

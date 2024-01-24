@@ -1,5 +1,4 @@
 # Copyright 2006 The Android Open Source Project
-# Copyright 2018 The LineageOS Project
 
 ifeq ($(BOARD_PROVIDES_LIBRIL),true)
 
