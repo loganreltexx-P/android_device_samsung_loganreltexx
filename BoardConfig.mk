@@ -27,6 +27,9 @@ TARGET_OTA_ASSERT_DEVICE := loganreltexx,loganrelte,GT-S7275R,GT-S7275B,GT-S7275
 # Inherit from proprietary vendor
 -include $(DEVICE_VENDOR_PATH)/BoardConfigVendor.mk
 
+# Inherit some MSM8930 stuff
+-include $(PLATFORM_PATH)/BoardConfigCommon.mk
+
 # The first api level the device has commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 19
 
