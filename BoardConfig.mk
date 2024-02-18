@@ -24,12 +24,8 @@
 # Assert
 TARGET_OTA_ASSERT_DEVICE := loganreltexx,loganrelte,GT-S7275R,GT-S7275B,GT-S7275T
 
-COMMON_PATH := device/samsung/loganreltexx
-
-# Inherit from common msm8930
--include device/samsung/msm8930-common/BoardConfigCommon.mk
 # Inherit from proprietary vendor
--include vendor/samsung/loganreltexx/BoardConfigVendor.mk
+-include $(DEVICE_VENDOR_PATH)/BoardConfigVendor.mk
 
 # The first api level the device has commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 19

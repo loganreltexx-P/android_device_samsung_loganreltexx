@@ -19,10 +19,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, build/target/product/go_defaults.mk)
 
 # Inherit from loganreltexx device
-$(call inherit-product, device/samsung/loganreltexx/device.mk)
+$(call inherit-product, $(COMMON_PATH)/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+COMMON_PATH        := device/samsung/loganreltexx
+DEVICE_VENDOR_PATH := vendor/samsung/loganreltexx
+PLATFORM_PATH      := device/samsung/msm8930-common
 
 PRODUCT_NAME := lineage_loganreltexx
 PRODUCT_DEVICE := loganreltexx

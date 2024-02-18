@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # Also get non-open-source specific aspects
-$(call inherit-product, vendor/samsung/loganreltexx/loganreltexx-vendor.mk)
+$(call inherit-product, $(DEVICE_VENDOR_PATH)/loganreltexx-vendor.mk)
 
 # Common overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/loganreltexx/overlay
